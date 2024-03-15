@@ -23,12 +23,12 @@
 
 ```json
 {
-"Nome": "Exemplo",
-"Email": "exemplo@example.com",
-"Telefone": "5555555555",
-"DataNascimento": "2000-01-01",
-"CPF": "123.456.789-00",
-"Status": "ACTIVE"
+    "Nome": "Exemplo",
+    "Email": "exemplo@example.com",
+    "Telefone": "5555555555",
+    "DataNascimento": "2000-01-01",
+    "CPF": "123.456.789-00",
+    "Status": "ACTIVE"
 }
 ```
 [Baixar postman collection](https://github.com/shutxx/Trabalho_API_person/blob/main/APIperson.postman_collection.json)
