@@ -24,7 +24,7 @@ module.exports = db.define('Pessoa', {
   },
   Status: {
     type: DataTypes.ENUM,
-    values:['COMPLETED', 'ACTIVE'],
+    values:['INACTIVE', 'ACTIVE'],
     allowNull: false,
     defaultValue: 'ACTIVE'
   }
