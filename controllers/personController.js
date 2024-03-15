@@ -13,10 +13,8 @@ const createPerson = async(req, res) => {
     try {
         const data = {...req.body}
         data.DataNascimento = new Date(data.DataNascimento)
-    
         const pessoa = await pessoas.create({...data})
-        console.log(pessoa)
-        res.send({...pessoa})
+        res.send({...pessoa.dataValues})
     } catch (error) {
         res.status(500).send(error)
     }
