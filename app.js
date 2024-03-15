@@ -12,6 +12,10 @@ app.use(express.json())
 app.use('/person', pessoaRouter)
 app.use(bodyParser.urlencoded({extended: true}))
 
+app.get('/', (req, res) => {
+  res.send('Bem-vindo ao sistema de gerenciamento de pessoas!');
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
