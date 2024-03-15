@@ -4,7 +4,7 @@ const { validarCPF } = require('../uteis/util')
 const listPerson = async(req, res) => {
     try{
         const pessoa =  await pessoas.findAll()
-        res.send({...pessoa})
+        res.status(200).json({ pessoas: pessoa})
     }catch(error){
         res.status(500).send(error)
     }
@@ -14,6 +14,7 @@ const createPerson = async(req, res) => {
     try {
         const data = {...req.body}
         data.DataNascimento = new Date(data.DataNascimento)
+        data.CPF = data.CPF.replace(/[^\d]/g, '')
         cpf = data.CPF
         if(!validarCPF(cpf)){
             return res.status(400).json({ error: 'CPF inválido' })
@@ -30,6 +31,7 @@ const updatePerson = async(req, res) => {
         const { id } = req.params
         const data = {...req.body}
         data.DataNascimento = new Date(data.DataNascimento)
+        data.CPF = data.CPF.replace(/[^\d]/g, '')
         const pessoa = await pessoas.findByPk(id)
         if(!pessoa){
             return res.status(404).json({ error: 'Pessoa não encontrada' })
