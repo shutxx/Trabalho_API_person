@@ -6,7 +6,6 @@ const cpfExists = async (cpf) => {
     return !!existingPerson;
 };
 
-
 const listPerson = async (req, res) => {
     try {
         const pessoa = await pessoas.findAll()
