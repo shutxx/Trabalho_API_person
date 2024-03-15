@@ -31,4 +31,4 @@
     "Status": "ACTIVE"
 }
 ```
-[Baixar postman collection](https://github.com/shutxx/Trabalho_API_person/blob/main/APIperson.postman_collection.json)
+[Postman collection](https://github.com/shutxx/Trabalho_API_person/blob/main/APIperson.postman_collection.json)
