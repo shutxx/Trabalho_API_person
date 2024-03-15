@@ -5,7 +5,7 @@
 
 ### Instalação
 - **Clone o repositório:** git clone https://github.com/shutxx/Trabalho_API_person
-- **Entre no diretório do projeto:** cd nome-do-repositorio
+- **Entre no diretório do projeto:** cd Trabalho_API_person
 - **Instale as dependências:** npm install
 
 ### Executando o Projeto
