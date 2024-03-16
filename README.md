@@ -9,7 +9,7 @@
 - **Instale as dependências:** npm install
 
 ### Executando o Projeto
-- **Execute o servidor:** npm start
+- **Execute o servidor:** node app.js
 - **O servidor estará acessível em http://localhost:3000.**
 
 ### Endpoints
