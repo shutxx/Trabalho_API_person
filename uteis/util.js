@@ -3,7 +3,8 @@ function validarCPF(strCPF) {
     var Soma
     var Resto
     Soma = 0
-    if (cpf.length < 10 || cpf.length > 11) return false
+    if (cpf.length < 10 || cpf.length > 11 ) return false
+    if (cpf === "00000000000") return false
 
     for (i = 1; i <= 9; i++) Soma = Soma + parseInt(cpf.substring(i - 1, i)) * (11 - i)
     Resto = (Soma * 10) % 11
