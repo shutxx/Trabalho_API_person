@@ -4,20 +4,20 @@
 - Este é um projeto de exemplo para demonstrar um sistema simples de gerenciamento de pessoas utilizando Node.js, Express e Sequelize.
 
 ### Instalação
-- **Clone o repositório:** git clone https://github.com/shutxx/Trabalho_API_person
-- **Entre no diretório do projeto:** cd Trabalho_API_person
-- **Instale as dependências:** npm install
+- **Clone o repositório:** `git clone https://github.com/shutxx/Trabalho_API_person`
+- **Entre no diretório do projeto:** `cd Trabalho_API_person`
+- **Instale as dependências:** `npm install`
 
 ### Executando o Projeto
-- **Execute o servidor:** node app.js
-- **O servidor estará acessível em http://localhost:3000.**
+- **Execute o servidor:** `node app.js`
+- **O servidor estará acessível em `http://localhost:3000`.**
 
 ### Endpoints
-- **GET " /pessoas ":** Retorna todas as pessoas cadastradas.
-- **GET " /pessoas/cpf/:cpf ":** Retorna os dados de uma pessoa específica.
-- **POST " /pessoas ":** Cria uma nova pessoa.
-- **PUT " /pessoas/:id ":** Atualiza os dados de uma pessoa existente.
-- **DELETE " /pessoas/:id ":** Remove uma pessoa do sistema.
+- **GET " /pessoas ":** `Retorna todas as pessoas cadastradas.`
+- **GET " /pessoas/cpf/:cpf ":** `Retorna os dados de uma pessoa específica.`
+- **POST " /pessoas ":** `Cria uma nova pessoa.`
+- **PUT " /pessoas/:id ":** `Atualiza os dados de uma pessoa existente.`
+- **DELETE " /pessoas/:id ":** `Remove uma pessoa do sistema.`
 
 ### Exemplo de Dados
 
