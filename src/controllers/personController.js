@@ -44,9 +44,6 @@ const updatePerson = async (req, res) => {
         if (!validarCPF(cpf)) {
             return res.status(400).json({ error: 'CPF inválido' })
         }
-        if (await cpfExists(cpf)) {
-            return res.status(400).json({ error: 'CPF já cadastrado' });
-        }
         const pessoa = await pessoas.findByPk(id)
         if (!pessoa) {
             return res.status(404).json({ error: 'Pessoa não encontrada' })

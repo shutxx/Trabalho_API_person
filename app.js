@@ -1,7 +1,7 @@
 const express = require('express')
-const dataBase = require('./infrastructure/db')
+const dataBase = require('./src/infrastructure/db')
 const bodyParser = require('body-parser')
-const pessoaRouter = require('./routes/personRoutes')
+const pessoaRouter = require('./src/routes/personRoutes')
 
 const app = express()
 const port = 3000
