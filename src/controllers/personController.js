@@ -2,7 +2,7 @@ const pessoas = require('../models/personModel')
 const { validarCPF } = require('../uteis/util')
 
 const cpfExists = async (cpf) => {
-    const existingPerson = await pessoas.findOne({ where: { CPF: cpf } });
+    const existingPerson = await pessoas.findOne({ where: { CPF: cpf } })
     return !!existingPerson;
 };
 

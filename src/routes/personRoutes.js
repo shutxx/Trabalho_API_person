@@ -6,6 +6,6 @@ pessoaRouter.get('/', listPerson)
 pessoaRouter.post('/', createPerson)
 pessoaRouter.put('/:id', updatePerson)
 pessoaRouter.delete('/:id', deletePerson)
-pessoaRouter.get('/cpf/:cpf', getCPF);
+pessoaRouter.get('/cpf/:cpf', getCPF)
 
 module.exports = pessoaRouter;
